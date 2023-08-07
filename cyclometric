@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,c,z;
+	printf("enter the number of edges= ");
+	scanf("%d",&a);
+	printf("enter the number of nodes= ");
+	scanf("%d",&b);
+	printf("enter the predicate nodes= ");
+	scanf("%d",&c);
+	z=a-b+(2*c);
+	printf("the cyclometeric complexity=%d",z);
+	
+}
