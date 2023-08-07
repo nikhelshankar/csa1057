@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float a1,a2,a3,a4,b1,b2,b3,b4,c1,c2,c3,c4,e1,e2,e3,t1,t2,t3,kloc;
+	a1=2.4;
+	a2=1.05;
+	a3=2.5;
+	a4=0.38;
+	b1=3.0;
+	b2=1.12;
+	b3=2.5;
+	b4=0.35;
+	c1=3.6;
+	c2=1.20;
+	c3=2.5;
+	c4=0.32;
+	printf("enter the kloc value= ");
+	scanf("%f",&kloc);
+	printf("\n");
+	e1=a1*(pow(kloc,a2));
+	t1=a3*(pow(e1,a4));
+	e2=b1*(pow(kloc,b2));
+	t2=b3*(pow(e2,b4));
+	e3=c1*(pow(kloc,c2));
+	t3=c3*(pow(e3,c4));
+	printf("\t**ORGANIC**");
+	printf("\n EFFORT=%f",e1);
+	printf("\nTIME COMPLEXITY=%f",t1);
+	printf("\n\n\t**SEMI DETACHED**");
+	printf("\n EFFORT=%f",e2);
+	printf("\nTIME COMPLEXITY=%f",t2);
+	printf("\n\n\t**EMBEDDED**");
+	printf("\n EFFORT=%f",e3);
+	printf("\nTIME COMPLEXITY=%f",t3);
+}
